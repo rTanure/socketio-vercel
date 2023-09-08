@@ -11,7 +11,14 @@ function App() {
   const [data, setData] = useState("desconectado")
 
   async function connect() {
-    const socket = await io.connect("http://localhost:3001")
+
+
+
+    // const socket = await io.connect("http://localhost:3001")
+    const socket = await io.connect("https://socketio-vercel-server.vercel.app/")
+
+
+
     setSocket(socket)
   }
 
