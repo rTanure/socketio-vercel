@@ -31,7 +31,7 @@ function App() {
   }, [socket])
 
   useEffect(()=>{
-    connect()
+    
   }, [])
 
   return (
@@ -46,7 +46,7 @@ function App() {
       </div>
       <h1>{data}</h1>
       <div className="card">
-        <button>
+        <button onClick={()=>connect()}>
           count is {count}
         </button>
         <p>
